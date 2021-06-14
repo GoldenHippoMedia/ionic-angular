@@ -215,7 +215,7 @@ var DeepLinker = (function () {
         if (link.loadChildren) {
             // awesome, looks like we'll lazy load this component
             // using loadChildren as the URL to request
-            return this._moduleLoader.load(link.loadChildren).then(function (response) {
+            return this._moduleLoader.load(link.segment, link.loadChildren).then(function (response) {
                 link.component = response.component;
                 return response.component;
             });

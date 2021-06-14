@@ -13,14 +13,13 @@ var ModuleLoader = (function () {
         this._cfrMap = new Map();
         this._promiseMap = new Map();
     }
-    ModuleLoader.prototype.load = function (modulePath) {
+    ModuleLoader.prototype.load = function (segment, modulePath) {
         var _this = this;
         (void 0) /* console.time */;
-        var splitString = modulePath.split(SPLITTER);
-        var promise = this._promiseMap.get(modulePath);
+        var promise = this._promiseMap.get(segment);
         if (!promise) {
-            promise = this._ngModuleLoader.load(splitString[0], splitString[1]);
-            this._promiseMap.set(modulePath, promise);
+            promise = this._ngModuleLoader.load(modulePath);
+            this._promiseMap.set(segment, promise);
         }
         return promise.then(function (loadedModule) {
             (void 0) /* console.timeEnd */;

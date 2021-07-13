@@ -3,33 +3,12 @@
 // --------------------------------------------------
 
 @function color-error($color-value, $color-name: null) {
-  $error-msg: "
-
-  The value `#{$color-value}` must be a color.
-  If you are setting the value as a map make sure
-  both the base and contrast are defined as colors.
-
-  For example:
-
-  $colors: (
-    primary:    #327eff,
-    secondary:  (base: #32db64, contrast: #000),
-  );";
+  $error-msg: "The value `#{$color-value}` must be a color. If you are setting the value as a map make sure both the base and contrast are defined as colors.";
 
   // If there was a name passed it means the value doesn't exist
   // so error that the value isn't defined
   @if ($color-name) {
-    $error-msg: "
-
-    The map color `#{$color-name}` is not defined.
-    Please make sure the color exists in your
-    `$colors` map.
-
-    For example:
-
-    $colors: (
-      #{$color-name}:    #327eff
-    );";
+    $error-msg: "The map color `#{$color-name}` is not defined. Please make sure the color exists in your `$colors` map.";
   }
 
   @error $error-msg;
@@ -289,7 +268,7 @@
       $color-value: color-inverse(map-get($color-value, base));
     }
 
-  } @elseif ($custom-contrast-mode) {
+  } @else if ($custom-contrast-mode) {
     // If a mode was passed we need to call
     // the custom inverse function to get the inverse
     // color based on the mode

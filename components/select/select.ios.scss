@@ -7,7 +7,7 @@
 $select-ios-padding-top:         $item-ios-padding-top !default;
 
 // deprecated
-$select-ios-padding-right:       ($item-ios-padding-end / 2) !default;
+$select-ios-padding-right:       ($item-ios-padding-end * 0.5) !default;
 /// @prop - Padding end of the select
 $select-ios-padding-end:         $select-ios-padding-right !default;
 

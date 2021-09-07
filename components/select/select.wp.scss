@@ -7,13 +7,13 @@
 $select-wp-padding-vertical:    0 !default;
 
 /// @prop - Padding start/end of the select
-$select-wp-padding-horizontal:  ($item-wp-padding-end / 2) !default;
+$select-wp-padding-horizontal:  ($item-wp-padding-end * 0.5) !default;
 
 /// @prop - Margin top of the select
 $select-wp-margin-top:          $item-wp-padding-top !default;
 
 // deprecated
-$select-wp-margin-right:        ($item-wp-padding-end / 2) !default;
+$select-wp-margin-right:        ($item-wp-padding-end * 0.5) !default;
 /// @prop - Margin end of the select
 $select-wp-margin-end:          $select-wp-margin-right !default;
 
@@ -21,7 +21,7 @@ $select-wp-margin-end:          $select-wp-margin-right !default;
 $select-wp-margin-bottom:       $item-wp-padding-bottom !default;
 
 // deprecated
-$select-wp-margin-left:         ($item-wp-padding-start / 2) !default;
+$select-wp-margin-left:         ($item-wp-padding-start * 0.5) !default;
 /// @prop - Margin start of the select
 $select-wp-margin-start:        $select-wp-margin-left !default;
 
@@ -80,8 +80,8 @@ $select-wp-placeholder-color:   $select-wp-icon-color !default;
 
   display: block;
 
-  width: ($select-wp-icon-width / 2);
-  height: ($select-wp-icon-width / 2);
+  width: ($select-wp-icon-width * 0.5);
+  height: ($select-wp-icon-width * 0.5);
 
   border-top: $select-wp-icon-arrow-width solid $select-wp-icon-color;
   border-right: $select-wp-icon-arrow-width solid $select-wp-icon-color;

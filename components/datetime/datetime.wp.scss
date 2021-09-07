@@ -10,7 +10,7 @@ $datetime-wp-min-width:           45% !default;
 $datetime-wp-padding-top:         $item-wp-padding-top !default;
 
 // deprecated
-$datetime-wp-padding-right:       ($item-wp-padding-end / 2) !default;
+$datetime-wp-padding-right:       ($item-wp-padding-end * 0.5) !default;
 /// @prop - Padding end of the DateTime component
 $datetime-wp-padding-end:         $datetime-wp-padding-right !default;
 

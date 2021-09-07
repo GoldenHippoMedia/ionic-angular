@@ -7,7 +7,7 @@
 $datetime-ios-padding-top:         $item-ios-padding-top !default;
 
 // deprecated
-$datetime-ios-padding-right:       ($item-ios-padding-end / 2) !default;
+$datetime-ios-padding-right:       ($item-ios-padding-end * 0.5) !default;
 /// @prop - Padding end of the DateTime component
 $datetime-ios-padding-end:         $datetime-ios-padding-right !default;
 

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "../../themes/ionic.globals.md";
 
 // Material Design Tabs
@@ -88,7 +90,7 @@ $tabs-md-tab-text-transform-origin-x:         50% !default;
 $tabs-md-tab-text-transform-origin-y:         80% !default;
 
 /// @prop - Transform for the active tab button text
-$tabs-md-tab-text-transform-active:           scale3d($tabs-md-tab-font-size-active / $tabs-md-tab-font-size, $tabs-md-tab-font-size-active / $tabs-md-tab-font-size, 1) !default;
+$tabs-md-tab-text-transform-active:           scale3d(math.div($tabs-md-tab-font-size-active, $tabs-md-tab-font-size), math.div($tabs-md-tab-font-size-active, $tabs-md-tab-font-size), 1) !default;
 
 /// @prop - Text transition for the tab button text
 $tabs-md-tab-text-transition:                 transform .3s ease-in-out !default;

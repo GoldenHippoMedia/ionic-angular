@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "../../themes/ionic.globals";
 @import "../../themes/ionic.mixins";
 
@@ -8,7 +10,7 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-grid($padding-width: $grid-padding-width) {
-  @include padding($padding-width / 2);
+  @include padding($padding-width * 0.5);
   @include margin-horizontal(auto);
 
   width: 100%;
@@ -100,7 +102,7 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-column-base($padding-width: $grid-padding-width) {
-  @include padding($padding-width / 2);
+  @include padding($padding-width * 0.5);
 
   position: relative;
 
@@ -137,12 +139,12 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-column($size, $columns: $grid-columns) {
-  flex: 0 0 percentage($size / $columns);
-  width: percentage($size / $columns);
+  flex: 0 0 percentage(math.div($size, $columns));
+  width: percentage(math.div($size, $columns));
   // Add a `max-width` to ensure content within each column does not blow out
   // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
   // do not appear to require this.
-  max-width: percentage($size / $columns);
+  max-width: percentage(math.div($size, $columns));
 }
 
 
@@ -153,7 +155,7 @@
   @each $breakpoint in map-keys($padding-widths) {
     @include media-breakpoint-up($breakpoint) {
       $padding-width: map-get($padding-widths, $breakpoint);
-      @include padding($padding-width / 2);
+      @include padding($padding-width * 0.5);
     }
   }
 }
@@ -163,7 +165,7 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-column-offset($size, $columns: $grid-columns) {
-  @include margin-horizontal(percentage($size / $columns), null);
+  @include margin-horizontal(percentage(math.div($size, $columns)), null);
 }
 
 
@@ -171,7 +173,7 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-column-push($size, $columns: $grid-columns) {
-  @include position(null, null, null, if($size > 0, percentage($size / $columns), auto));
+  @include position(null, null, null, if($size > 0, percentage(math.div($size, $columns)), auto));
 }
 
 
@@ -179,7 +181,7 @@
 // ---------------------------------------------------------------------------------
 
 @mixin make-column-pull($size, $columns: $grid-columns) {
-  @include position(null, if($size > 0, percentage($size / $columns), auto), null, null);
+  @include position(null, if($size > 0, percentage(math.div($size, $columns)), auto), null, null);
 }
 
 

@@ -7,7 +7,7 @@
 $select-md-padding-top:         $item-md-padding-top !default;
 
 // deprecated
-$select-md-padding-right:       ($item-md-padding-end / 2) !default;
+$select-md-padding-right:       ($item-md-padding-end * 0.5) !default;
 /// @prop - Padding end of the select
 $select-md-padding-end:         $select-md-padding-right !default;
 

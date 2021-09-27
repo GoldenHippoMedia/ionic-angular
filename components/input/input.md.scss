@@ -10,7 +10,7 @@ $text-input-md-background-color:            $list-md-background-color !default;
 $text-input-md-margin-top:                  $item-md-padding-top !default;
 
 // deprecated
-$text-input-md-margin-right:                ($item-md-padding-end / 2) !default;
+$text-input-md-margin-right:                ($item-md-padding-end * 0.5) !default;
 /// @prop - Margin end of the input
 $text-input-md-margin-end:                  $text-input-md-margin-right !default;
 
@@ -18,7 +18,7 @@ $text-input-md-margin-end:                  $text-input-md-margin-right !default
 $text-input-md-margin-bottom:               $item-md-padding-bottom !default;
 
 // deprecated
-$text-input-md-margin-left:                 ($item-md-padding-start / 2) !default;
+$text-input-md-margin-left:                 ($item-md-padding-start * 0.5) !default;
 /// @prop - Margin start of the input
 $text-input-md-margin-start:                $text-input-md-margin-left !default;
 
@@ -68,8 +68,8 @@ $text-input-md-highlight-color-invalid:     $text-input-highlight-color-invalid 
 // --------------------------------------------------
 
 .input-md .inset-input {
-  @include padding(($item-md-padding-top / 2), ($item-md-padding-end / 2), ($item-md-padding-bottom / 2), ($item-md-padding-start / 2));
-  @include margin(($item-md-padding-top / 2), $item-md-padding-end, ($item-md-padding-bottom / 2), $item-md-padding-start);
+  @include padding(($item-md-padding-top * 0.5), ($item-md-padding-end * 0.5), ($item-md-padding-bottom * 0.5), ($item-md-padding-start * 0.5));
+  @include margin(($item-md-padding-top * 0.5), $item-md-padding-end, ($item-md-padding-bottom * 0.5), $item-md-padding-start);
 }
 
 
@@ -168,7 +168,7 @@ $text-input-md-highlight-color-invalid:     $text-input-highlight-color-invalid 
 }
 
 .input-md .text-input-clear-icon {
-  @include position-horizontal(null, ($item-md-padding-end / 2));
+  @include position-horizontal(null, ($item-md-padding-end * 0.5));
   @include svg-background-image($text-input-md-input-clear-icon-svg);
 
   width: $text-input-md-input-clear-icon-width;

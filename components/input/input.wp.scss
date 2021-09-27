@@ -16,7 +16,7 @@ $text-input-wp-border-width:                2px !default;
 $text-input-wp-margin-top:                  $item-wp-padding-top !default;
 
 // deprecated
-$text-input-wp-margin-right:                ($item-wp-padding-end / 2) !default;
+$text-input-wp-margin-right:                ($item-wp-padding-end * 0.5) !default;
 /// @prop - Margin end of the input
 $text-input-wp-margin-end:                  $text-input-wp-margin-right !default;
 
@@ -24,7 +24,7 @@ $text-input-wp-margin-end:                  $text-input-wp-margin-right !default
 $text-input-wp-margin-bottom:               $item-wp-padding-bottom !default;
 
 // deprecated
-$text-input-wp-margin-left:                 ($item-wp-padding-start / 2) !default;
+$text-input-wp-margin-left:                 ($item-wp-padding-start * 0.5) !default;
 /// @prop - Margin start of the input
 $text-input-wp-margin-start:                $text-input-wp-margin-left !default;
 
@@ -86,8 +86,8 @@ $text-input-wp-highlight-color-invalid:     $text-input-highlight-color-invalid 
 // --------------------------------------------------
 
 .item-wp .inset-input {
-  @include padding(($item-wp-padding-top / 2), ($item-wp-padding-end / 2), ($item-wp-padding-bottom / 2), ($item-wp-padding-start / 2));
-  @include margin(($item-wp-padding-top / 2), $item-wp-padding-end, ($item-wp-padding-bottom / 2), $item-wp-padding-start);
+  @include padding(($item-wp-padding-top * 0.5), ($item-wp-padding-end * 0.5), ($item-wp-padding-bottom * 0.5), ($item-wp-padding-start * 0.5));
+  @include margin(($item-wp-padding-top * 0.5), $item-wp-padding-end, ($item-wp-padding-bottom * 0.5), $item-wp-padding-start);
 }
 
 
@@ -151,7 +151,7 @@ $text-input-wp-highlight-color-invalid:     $text-input-highlight-color-invalid 
 }
 
 .input-wp .text-input-clear-icon {
-  @include position-horizontal(null, ($item-wp-padding-end / 2));
+  @include position-horizontal(null, ($item-wp-padding-end * 0.5));
   @include svg-background-image($text-input-wp-input-clear-icon-svg);
 
   width: $text-input-wp-input-clear-icon-width;

@@ -16,7 +16,7 @@ $label-md-margin:                     null !default;
 $label-md-margin-top:                 $item-md-padding-top !default;
 
 /// @prop - Margin end of the label
-$label-md-margin-end:                 ($item-md-padding-end / 2) !default;
+$label-md-margin-end:                 ($item-md-padding-end * 0.5) !default;
 
 /// @prop - Margin bottom of the label
 $label-md-margin-bottom:              $item-md-padding-bottom !default;

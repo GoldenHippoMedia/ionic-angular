@@ -91,7 +91,7 @@ export declare class RadioGroup {
      * @output {any} Emitted when the selected button has changed.
      */
     ionChange: EventEmitter<RadioGroup>;
-    constructor(_renderer: Renderer, _elementRef: ElementRef, _cd: ChangeDetectorRef);
+    constructor(_renderer: Renderer2, _elementRef: ElementRef, _cd: ChangeDetectorRef);
     /**
      * @hidden
      */

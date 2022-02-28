@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, Renderer, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 import { isTrueProperty } from '../../util/util';
@@ -189,7 +189,7 @@ Spinner.decorators = [
 Spinner.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 Spinner.propDecorators = {
     'name': [{ type: Input },],

@@ -56,7 +56,7 @@ export declare class Label extends Ion {
      * @hidden
      */
     type: string;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, isFloating: string, isStacked: string, isFixed: string, isInset: string);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, isFloating: string, isStacked: string, isFixed: string, isInset: string);
     /**
      * @hidden
      */

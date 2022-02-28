@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Renderer, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Slides } from './slides';
 /**
  * @name Slide
@@ -38,7 +38,7 @@ Slide.decorators = [
 /** @nocollapse */
 Slide.ctorParameters = () => [
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Slides, },
 ];
 //# sourceMappingURL=slide.js.map

@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, ComponentRef, ElementRef, ErrorHandler, EventEmitter, NgZone, Renderer, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, ComponentRef, ElementRef, ErrorHandler, EventEmitter, NgZone, Renderer2, ViewContainerRef } from '@angular/core';
 import { App } from '../components/app/app';
 import { Config } from '../config/config';
 import { NavOptions, NavResult, TransitionDoneFn, TransitionInstruction } from './nav-util';
@@ -52,7 +52,7 @@ export declare class NavControllerBase extends Ion implements NavController {
     id: string;
     name: string;
     swipeBackEnabled: boolean;
-    constructor(parent: any, _app: App, config: Config, plt: Platform, elementRef: ElementRef, _zone: NgZone, renderer: Renderer, _cfr: ComponentFactoryResolver, _gestureCtrl: GestureController, _trnsCtrl: TransitionController, _linker: DeepLinker, _domCtrl: DomController, _errHandler: ErrorHandler);
+    constructor(parent: any, _app: App, config: Config, plt: Platform, elementRef: ElementRef, _zone: NgZone, renderer: Renderer2, _cfr: ComponentFactoryResolver, _gestureCtrl: GestureController, _trnsCtrl: TransitionController, _linker: DeepLinker, _domCtrl: DomController, _errHandler: ErrorHandler);
     push(page: any, params?: any, opts?: NavOptions, done?: TransitionDoneFn): Promise<any>;
     insert(insertIndex: number, page: any, params?: any, opts?: NavOptions, done?: TransitionDoneFn): Promise<any>;
     insertPages(insertIndex: number, insertPages: any[], opts?: NavOptions, done?: TransitionDoneFn): Promise<any>;

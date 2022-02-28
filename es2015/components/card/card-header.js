@@ -18,6 +18,6 @@ CardHeader.decorators = [
 CardHeader.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=card-header.js.map

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, EventEmitter, NgZone, Optional, Output, Renderer, ViewEncapsulation, forwardRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, EventEmitter, NgZone, Optional, Output, Renderer2, ViewEncapsulation, forwardRef } from '@angular/core';
 import { swipeShouldReset } from '../../util/util';
 import { Item } from './item';
 import { List } from '../list/list';
@@ -395,7 +395,7 @@ var ItemSliding = (function () {
     ItemSliding.ctorParameters = function () { return [
         { type: List, decorators: [{ type: Optional },] },
         { type: Platform, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: NgZone, },
     ]; };

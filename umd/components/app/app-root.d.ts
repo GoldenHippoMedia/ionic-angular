@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, ElementRef, InjectionToken, OnInit, Renderer, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, ElementRef, InjectionToken, OnInit, Renderer2, ViewContainerRef } from '@angular/core';
 import { App } from './app';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
@@ -19,7 +19,7 @@ export declare class IonicApp extends Ion implements OnInit {
     _overlayPortal: OverlayPortal;
     _loadingPortal: OverlayPortal;
     _toastPortal: OverlayPortal;
-    constructor(_userCmp: any, _cfr: ComponentFactoryResolver, elementRef: ElementRef, renderer: Renderer, config: Config, _plt: Platform, app: App);
+    constructor(_userCmp: any, _cfr: ComponentFactoryResolver, elementRef: ElementRef, renderer: Renderer2, config: Config, _plt: Platform, app: App);
     ngOnInit(): void;
     /**
      * @hidden

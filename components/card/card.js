@@ -28,7 +28,7 @@ var Card = (function (_super) {
     Card.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Card;
 }(Ion));

@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, ComponentFactoryResolver, ElementRef, Inject, InjectionToken, Renderer, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ElementRef, Inject, InjectionToken, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import { App } from './app';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
@@ -157,7 +157,7 @@ var IonicApp = (function (_super) {
         { type: undefined, decorators: [{ type: Inject, args: [AppRootToken,] },] },
         { type: ComponentFactoryResolver, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: Platform, },
         { type: App, },

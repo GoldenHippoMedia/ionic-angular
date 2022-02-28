@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, ElementRef, HostListener, Input, NgZone, Optional, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, NgZone, Optional, Renderer2, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Config } from '../../config/config';
 import { DomController } from '../../platform/dom-controller';
@@ -214,7 +214,7 @@ var Toggle = (function (_super) {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Haptic, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: GestureController, },

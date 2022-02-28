@@ -102,7 +102,7 @@ var Label = (function (_super) {
     Label.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: undefined, decorators: [{ type: Attribute, args: ['floating',] },] },
         { type: undefined, decorators: [{ type: Attribute, args: ['stacked',] },] },
         { type: undefined, decorators: [{ type: Attribute, args: ['fixed',] },] },

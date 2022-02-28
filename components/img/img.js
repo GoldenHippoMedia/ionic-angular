@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, Optional, Renderer, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, Optional, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Content } from '../content/content';
 import { DomController } from '../../platform/dom-controller';
 import { isPresent, isTrueProperty } from '../../util/util';
@@ -352,7 +352,7 @@ var Img = (function () {
     /** @nocollapse */
     Img.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Platform, },
         { type: Content, decorators: [{ type: Optional },] },
         { type: DomController, },

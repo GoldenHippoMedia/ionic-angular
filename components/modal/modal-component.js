@@ -1,4 +1,4 @@
-import { Component, ComponentFactoryResolver, ElementRef, HostListener, Renderer, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ElementRef, HostListener, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import { KEY_ESCAPE } from '../../platform/key';
 import { NavParams } from '../../navigation/nav-params';
 import { ViewController } from '../../navigation/view-controller';
@@ -90,7 +90,7 @@ var ModalCmp = (function () {
     /** @nocollapse */
     ModalCmp.ctorParameters = function () { return [
         { type: ComponentFactoryResolver, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: NavParams, },
         { type: ViewController, },

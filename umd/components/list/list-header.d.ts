@@ -6,6 +6,6 @@ import { Ion } from '../ion';
  */
 export declare class ListHeader extends Ion {
     private _id;
-    constructor(config: Config, renderer: Renderer, elementRef: ElementRef, _id: string);
+    constructor(config: Config, renderer: Renderer2, elementRef: ElementRef, _id: string);
     id: string;
 }

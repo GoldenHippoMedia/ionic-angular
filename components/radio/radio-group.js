@@ -233,7 +233,7 @@ var RadioGroup = (function () {
     ];
     /** @nocollapse */
     RadioGroup.ctorParameters = function () { return [
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: ChangeDetectorRef, },
     ]; };

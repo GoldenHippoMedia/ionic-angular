@@ -28,7 +28,7 @@ var CardTitle = (function (_super) {
     CardTitle.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return CardTitle;
 }(Ion));

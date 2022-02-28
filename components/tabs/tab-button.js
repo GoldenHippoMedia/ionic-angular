@@ -65,7 +65,7 @@ var TabButton = (function (_super) {
     TabButton.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     TabButton.propDecorators = {
         'tab': [{ type: Input },],

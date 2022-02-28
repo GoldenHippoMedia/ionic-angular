@@ -86,7 +86,7 @@ var FabList = (function () {
     /** @nocollapse */
     FabList.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: Platform, },
     ]; };

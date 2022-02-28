@@ -82,7 +82,7 @@ ToastCmp.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
     { type: NavParams, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 let toastIds = -1;
 //# sourceMappingURL=toast-component.js.map

@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { ChangeDetectorRef, Component, ComponentFactoryResolver, ElementRef, ErrorHandler, EventEmitter, Input, NgZone, Optional, Output, Renderer, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, ComponentFactoryResolver, ElementRef, ErrorHandler, EventEmitter, Input, NgZone, Optional, Output, Renderer2, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -362,7 +362,7 @@ var Tab = (function (_super) {
         { type: Platform, },
         { type: ElementRef, },
         { type: NgZone, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ComponentFactoryResolver, },
         { type: ChangeDetectorRef, },
         { type: GestureController, },

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, NgZone, Optional, Output, Renderer, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, NgZone, Optional, Output, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { enableKeyboardControl } from './swiper/swiper-keyboard';
 import { Ion } from '../ion';
@@ -877,7 +877,7 @@ Slides.ctorParameters = () => [
     { type: NgZone, },
     { type: ViewController, decorators: [{ type: Optional },] },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 Slides.propDecorators = {
     'autoplay': [{ type: Input },],

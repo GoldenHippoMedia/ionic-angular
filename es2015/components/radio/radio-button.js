@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { Form } from '../../util/form';
 import { Ion } from '../ion';
@@ -179,7 +179,7 @@ RadioButton.ctorParameters = () => [
     { type: Form, },
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Item, decorators: [{ type: Optional },] },
     { type: RadioGroup, decorators: [{ type: Optional },] },
 ];

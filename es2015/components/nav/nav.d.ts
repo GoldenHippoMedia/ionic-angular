@@ -1,4 +1,4 @@
-import { AfterViewInit, ComponentFactoryResolver, ElementRef, ErrorHandler, NgZone, Renderer, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, ComponentFactoryResolver, ElementRef, ErrorHandler, NgZone, Renderer2, ViewContainerRef } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -47,7 +47,7 @@ import { RootNode } from '../split-pane/split-pane';
 export declare class Nav extends NavControllerBase implements AfterViewInit, RootNode, INav {
     private _root;
     private _hasInit;
-    constructor(viewCtrl: ViewController, parent: NavController, app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer, cfr: ComponentFactoryResolver, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, domCtrl: DomController, errHandler: ErrorHandler);
+    constructor(viewCtrl: ViewController, parent: NavController, app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer2, cfr: ComponentFactoryResolver, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, domCtrl: DomController, errHandler: ErrorHandler);
     /**
      * @hidden
      */

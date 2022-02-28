@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, Optional, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, Optional, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Button } from '../button/button';
 import { Config } from '../../config/config';
 import { Form } from '../../util/form';
@@ -430,7 +430,7 @@ var Item = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ItemReorder, decorators: [{ type: Optional },] },
     ]; };
     Item.propDecorators = {

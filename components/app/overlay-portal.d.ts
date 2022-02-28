@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, ElementRef, ErrorHandler, NgZone, Renderer, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, ElementRef, ErrorHandler, NgZone, Renderer2, ViewContainerRef } from '@angular/core';
 import { App } from './app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -12,7 +12,7 @@ import { TransitionController } from '../../transitions/transition-controller';
  * @hidden
  */
 export declare class OverlayPortal extends NavControllerBase implements NavigationContainer {
-    constructor(app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer, cfr: ComponentFactoryResolver, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, viewPort: ViewContainerRef, domCtrl: DomController, errHandler: ErrorHandler);
+    constructor(app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer2, cfr: ComponentFactoryResolver, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, viewPort: ViewContainerRef, domCtrl: DomController, errHandler: ErrorHandler);
     _overlayPortal: number;
     ngOnDestroy(): void;
     getType(): string;

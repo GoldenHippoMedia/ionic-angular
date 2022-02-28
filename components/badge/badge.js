@@ -32,7 +32,7 @@ var Badge = (function (_super) {
     Badge.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Badge;
 }(Ion));

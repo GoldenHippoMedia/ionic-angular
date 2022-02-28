@@ -46,7 +46,7 @@ export declare class List extends Ion {
     private _enableSliding;
     private _containsSlidingItems;
     private _slidingGesture;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, _plt: Platform, _gestureCtrl: GestureController, _domCtrl: DomController);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, _plt: Platform, _gestureCtrl: GestureController, _domCtrl: DomController);
     /**
      * @input {boolean} If true, the sliding items will be enabled.
      */

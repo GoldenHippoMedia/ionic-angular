@@ -378,7 +378,7 @@ export declare class DateTime extends BaseInput<DateTimeData> implements AfterCo
      * @output {any} Emitted when the datetime selection was cancelled.
      */
     ionCancel: EventEmitter<any>;
-    constructor(form: Form, config: Config, elementRef: ElementRef, renderer: Renderer, item: Item, _pickerCtrl: PickerController);
+    constructor(form: Form, config: Config, elementRef: ElementRef, renderer: Renderer2, item: Item, _pickerCtrl: PickerController);
     /**
      * @hidden
      */

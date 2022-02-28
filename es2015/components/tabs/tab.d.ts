@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, ComponentFactoryResolver, ComponentRef, ElementRef, ErrorHandler, EventEmitter, NgZone, Renderer, ViewContainerRef } from '@angular/core';
+import { ChangeDetectorRef, ComponentFactoryResolver, ComponentRef, ElementRef, ErrorHandler, EventEmitter, NgZone, Renderer2, ViewContainerRef } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -209,7 +209,7 @@ export declare class Tab extends NavControllerBase implements ITab {
      * @output {Tab} Emitted when the current tab is selected.
      */
     ionSelect: EventEmitter<Tab>;
-    constructor(parent: Tabs, app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer, cfr: ComponentFactoryResolver, _cd: ChangeDetectorRef, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, _dom: DomController, errHandler: ErrorHandler);
+    constructor(parent: Tabs, app: App, config: Config, plt: Platform, elementRef: ElementRef, zone: NgZone, renderer: Renderer2, cfr: ComponentFactoryResolver, _cd: ChangeDetectorRef, gestureCtrl: GestureController, transCtrl: TransitionController, linker: DeepLinker, _dom: DomController, errHandler: ErrorHandler);
     /**
      * @hidden
      */

@@ -51,7 +51,7 @@ var Header = (function (_super) {
     Header.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ViewController, decorators: [{ type: Optional },] },
     ]; };
     return Header;

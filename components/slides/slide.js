@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Renderer, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Slides } from './slides';
 /**
  * @name Slide
@@ -37,7 +37,7 @@ var Slide = (function () {
     /** @nocollapse */
     Slide.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Slides, },
     ]; };
     return Slide;

@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, ComponentFactoryResolver, ElementRef, ErrorHandler, EventEmitter, Input, NgZone, Optional, Output, Renderer, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, ComponentFactoryResolver, ElementRef, ErrorHandler, EventEmitter, Input, NgZone, Optional, Output, Renderer2, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -329,7 +329,7 @@ Tab.ctorParameters = () => [
     { type: Platform, },
     { type: ElementRef, },
     { type: NgZone, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ComponentFactoryResolver, },
     { type: ChangeDetectorRef, },
     { type: GestureController, },

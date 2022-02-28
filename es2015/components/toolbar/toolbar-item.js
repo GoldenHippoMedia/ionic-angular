@@ -1,4 +1,4 @@
-import { ContentChildren, Directive, ElementRef, Inject, Optional, Renderer, forwardRef } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, Inject, Optional, Renderer2, forwardRef } from '@angular/core';
 import { Button } from '../button/button';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
@@ -29,7 +29,7 @@ ToolbarItem.decorators = [
 ToolbarItem.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Toolbar, decorators: [{ type: Optional },] },
     { type: Navbar, decorators: [{ type: Optional }, { type: Inject, args: [forwardRef(() => Navbar),] },] },
 ];

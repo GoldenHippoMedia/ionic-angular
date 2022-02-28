@@ -27,6 +27,6 @@ Backdrop.decorators = [
 /** @nocollapse */
 Backdrop.ctorParameters = () => [
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=backdrop.js.map

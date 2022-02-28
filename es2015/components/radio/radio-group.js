@@ -223,7 +223,7 @@ RadioGroup.decorators = [
 ];
 /** @nocollapse */
 RadioGroup.ctorParameters = () => [
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ElementRef, },
     { type: ChangeDetectorRef, },
 ];

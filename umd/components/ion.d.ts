@@ -31,7 +31,7 @@ export declare class Ion {
      * For more information, see [Platform Styles](/docs/theming/platform-specific-styles).
      */
     mode: string;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, componentName?: string);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, componentName?: string);
     /** @hidden */
     setElementClass(className: string, isAdd: boolean): void;
     /** @hidden */

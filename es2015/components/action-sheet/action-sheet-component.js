@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2, ViewEncapsulation } from '@angular/core';
 import { BLOCK_ALL, GestureController } from '../../gestures/gesture-controller';
 import { Config } from '../../config/config';
 import { KEY_ESCAPE } from '../../platform/key';
@@ -147,7 +147,7 @@ ActionSheetCmp.ctorParameters = () => [
     { type: ElementRef, },
     { type: GestureController, },
     { type: NavParams, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 ActionSheetCmp.propDecorators = {
     'keyUp': [{ type: HostListener, args: ['body:keyup', ['$event'],] },],

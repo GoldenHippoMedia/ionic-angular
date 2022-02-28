@@ -115,7 +115,7 @@ var Segment = (function (_super) {
     Segment.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgControl, decorators: [{ type: Optional },] },
     ]; };
     Segment.propDecorators = {

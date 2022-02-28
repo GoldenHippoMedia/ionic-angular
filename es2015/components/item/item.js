@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, Optional, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, Optional, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Button } from '../button/button';
 import { Config } from '../../config/config';
 import { Form } from '../../util/form';
@@ -403,7 +403,7 @@ Item.ctorParameters = () => [
     { type: Form, },
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ItemReorder, decorators: [{ type: Optional },] },
 ];
 Item.propDecorators = {

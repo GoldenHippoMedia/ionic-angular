@@ -26,7 +26,7 @@ var Backdrop = (function () {
     /** @nocollapse */
     Backdrop.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Backdrop;
 }());

@@ -40,7 +40,7 @@ Header.decorators = [
 Header.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ViewController, decorators: [{ type: Optional },] },
 ];
 //# sourceMappingURL=toolbar-header.js.map

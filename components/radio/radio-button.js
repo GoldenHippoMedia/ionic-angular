@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { Form } from '../../util/form';
 import { Ion } from '../ion';
@@ -206,7 +206,7 @@ var RadioButton = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: RadioGroup, decorators: [{ type: Optional },] },
     ]; };

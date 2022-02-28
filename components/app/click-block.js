@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Inject, Renderer, forwardRef } from '@angular/core';
+import { Directive, ElementRef, Inject, Renderer2, forwardRef } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { Platform } from '../../platform/platform';
@@ -63,7 +63,7 @@ var ClickBlock = (function () {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return ClickBlock;
 }());

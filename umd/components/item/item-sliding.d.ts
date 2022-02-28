@@ -145,7 +145,7 @@ export declare class ItemSliding {
      *
      */
     ionDrag: EventEmitter<ItemSliding>;
-    constructor(list: List, _plt: Platform, _renderer: Renderer, _elementRef: ElementRef, _zone: NgZone);
+    constructor(list: List, _plt: Platform, _renderer: Renderer2, _elementRef: ElementRef, _zone: NgZone);
     _itemOptions: QueryList<ItemOptions>;
     /**
      * @hidden

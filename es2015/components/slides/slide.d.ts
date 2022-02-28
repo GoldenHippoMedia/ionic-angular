@@ -14,7 +14,7 @@ import { Slides } from './slides';
  */
 export declare class Slide {
     private _slides;
-    constructor(elementRef: ElementRef, renderer: Renderer, _slides: Slides);
+    constructor(elementRef: ElementRef, renderer: Renderer2, _slides: Slides);
     /**
      * @hidden
      */

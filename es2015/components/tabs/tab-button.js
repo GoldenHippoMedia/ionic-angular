@@ -54,7 +54,7 @@ TabButton.decorators = [
 TabButton.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 TabButton.propDecorators = {
     'tab': [{ type: Input },],

@@ -81,7 +81,7 @@ FabList.decorators = [
 /** @nocollapse */
 FabList.ctorParameters = () => [
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Config, },
     { type: Platform, },
 ];

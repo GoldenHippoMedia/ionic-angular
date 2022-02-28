@@ -1,4 +1,4 @@
-import { Renderer, TypeDecorator } from '@angular/core';
+import { Renderer2, TypeDecorator } from '@angular/core';
 import { DeepLinker } from './deep-linker';
 import { IonicPageMetadata } from './ionic-page';
 import { ViewController } from './view-controller';

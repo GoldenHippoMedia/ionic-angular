@@ -47,7 +47,7 @@ var Footer = (function (_super) {
     Footer.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ViewController, decorators: [{ type: Optional },] },
     ]; };
     return Footer;

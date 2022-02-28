@@ -18,6 +18,6 @@ CardTitle.decorators = [
 CardTitle.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=card-title.js.map

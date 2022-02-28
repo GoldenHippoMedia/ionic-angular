@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Inject, Optional, Renderer, ViewEncapsulation, forwardRef, } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Inject, Optional, Renderer2, ViewEncapsulation, forwardRef, } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 import { Navbar } from './navbar';
@@ -65,7 +65,7 @@ ToolbarTitle.decorators = [
 ToolbarTitle.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Toolbar, decorators: [{ type: Optional },] },
     { type: Navbar, decorators: [{ type: Optional }, { type: Inject, args: [forwardRef(() => Navbar),] },] },
 ];

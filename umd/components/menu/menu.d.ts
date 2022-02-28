@@ -264,7 +264,7 @@ export declare class Menu implements RootNode, MenuInterface, OnInit, OnDestroy 
      * @output {event} Emitted when the menu has been closed.
      */
     ionClose: EventEmitter<boolean>;
-    constructor(_menuCtrl: MenuController, _elementRef: ElementRef, _config: Config, _plt: Platform, _renderer: Renderer, _keyboard: Keyboard, _gestureCtrl: GestureController, _domCtrl: DomController, _app: App);
+    constructor(_menuCtrl: MenuController, _elementRef: ElementRef, _config: Config, _plt: Platform, _renderer: Renderer2, _keyboard: Keyboard, _gestureCtrl: GestureController, _domCtrl: DomController, _app: App);
     /**
      * @hidden
      */

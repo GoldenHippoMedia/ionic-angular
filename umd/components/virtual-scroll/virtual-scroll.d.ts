@@ -1,4 +1,4 @@
-import { AfterContentInit, ChangeDetectorRef, DoCheck, ElementRef, IterableDiffer, IterableDiffers, NgZone, OnChanges, OnDestroy, Renderer, SimpleChanges, TrackByFunction } from '@angular/core';
+import { AfterContentInit, ChangeDetectorRef, DoCheck, ElementRef, IterableDiffer, IterableDiffers, NgZone, OnChanges, OnDestroy, Renderer2, SimpleChanges, TrackByFunction } from '@angular/core';
 import { Config } from '../../config/config';
 import { Content, ScrollEvent } from '../content/content';
 import { DomController } from '../../platform/dom-controller';
@@ -345,7 +345,7 @@ export declare class VirtualScroll implements DoCheck, OnChanges, AfterContentIn
      * @input {function} Same as `ngForTrackBy` which can be used on `ngFor`.
      */
     virtualTrackBy: TrackByFunction<any>;
-    constructor(_iterableDiffers: IterableDiffers, _elementRef: ElementRef, _renderer: Renderer, _zone: NgZone, _cd: ChangeDetectorRef, _content: Content, _plt: Platform, _ctrl: ViewController, _config: Config, _dom: DomController);
+    constructor(_iterableDiffers: IterableDiffers, _elementRef: ElementRef, _renderer: Renderer2, _zone: NgZone, _cd: ChangeDetectorRef, _content: Content, _plt: Platform, _ctrl: ViewController, _config: Config, _dom: DomController);
     /**
      * @hidden
      */

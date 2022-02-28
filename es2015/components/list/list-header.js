@@ -25,7 +25,7 @@ ListHeader.decorators = [
 /** @nocollapse */
 ListHeader.ctorParameters = () => [
     { type: Config, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ElementRef, },
     { type: undefined, decorators: [{ type: Attribute, args: ['id',] },] },
 ];

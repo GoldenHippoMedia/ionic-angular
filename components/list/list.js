@@ -116,7 +116,7 @@ var List = (function (_super) {
     List.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Platform, },
         { type: GestureController, },
         { type: DomController, },

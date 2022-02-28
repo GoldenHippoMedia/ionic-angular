@@ -7237,7 +7237,7 @@ function remove(list, el) {
  * @deprecated Use the `Renderer2` instead.
  * @abstract
  */
-var Renderer = (function () {
+var Renderer2 = (function () {
     function Renderer() {
     }
     /**
@@ -16805,7 +16805,7 @@ NgClass.ctorParameters = function () { return [
     { type: IterableDiffers, },
     { type: KeyValueDiffers, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ]; };
 NgClass.propDecorators = {
     'klass': [{ type: Input, args: ['class',] },],
@@ -17926,7 +17926,7 @@ NgStyle.decorators = [
 NgStyle.ctorParameters = function () { return [
     { type: KeyValueDiffers, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ]; };
 NgStyle.propDecorators = {
     'ngStyle': [{ type: Input },],
@@ -31601,7 +31601,7 @@ var OverlayPortal = (function (_super) {
         { type: Platform, },
         { type: ElementRef, },
         { type: NgZone, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ComponentFactoryResolver, },
         { type: GestureController, },
         { type: TransitionController, },
@@ -31768,7 +31768,7 @@ var IonicApp = (function (_super) {
         { type: undefined, decorators: [{ type: Inject, args: [AppRootToken,] },] },
         { type: ComponentFactoryResolver, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: Platform, },
         { type: App, },
@@ -31935,7 +31935,7 @@ var ActionSheetCmp = (function () {
         { type: ElementRef, },
         { type: GestureController, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     ActionSheetCmp.propDecorators = {
         'keyUp': [{ type: HostListener, args: ['body:keyup', ['$event'],] },],
@@ -32559,7 +32559,7 @@ var AlertCmp = (function () {
         { type: Config, },
         { type: GestureController, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Platform, },
     ]; };
     AlertCmp.propDecorators = {
@@ -33090,7 +33090,7 @@ var Backdrop = (function () {
     /** @nocollapse */
     Backdrop.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Backdrop;
 }());
@@ -33126,7 +33126,7 @@ var Badge = (function (_super) {
     Badge.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Badge;
 }(Ion));
@@ -33493,7 +33493,7 @@ var Button = (function (_super) {
         { type: undefined, decorators: [{ type: Attribute, args: ['ion-button',] },] },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Button.propDecorators = {
         'large': [{ type: Input },],
@@ -33539,7 +33539,7 @@ var Card = (function (_super) {
     Card.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Card;
 }(Ion));
@@ -33571,7 +33571,7 @@ var CardContent = (function (_super) {
     CardContent.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return CardContent;
 }(Ion));
@@ -33603,7 +33603,7 @@ var CardHeader = (function (_super) {
     CardHeader.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return CardHeader;
 }(Ion));
@@ -33635,7 +33635,7 @@ var CardTitle = (function (_super) {
     CardTitle.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return CardTitle;
 }(Ion));
@@ -40770,7 +40770,7 @@ var Icon = (function (_super) {
     Icon.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Icon.propDecorators = {
         'name': [{ type: Input },],
@@ -40883,7 +40883,7 @@ var Label = (function (_super) {
     Label.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: undefined, decorators: [{ type: Attribute, args: ['floating',] },] },
         { type: undefined, decorators: [{ type: Attribute, args: ['stacked',] },] },
         { type: undefined, decorators: [{ type: Attribute, args: ['fixed',] },] },
@@ -42419,7 +42419,7 @@ var Content = (function (_super) {
         { type: Platform, },
         { type: DomController, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: App, },
         { type: Keyboard, },
         { type: NgZone, },
@@ -42988,7 +42988,7 @@ var ItemReorder = (function () {
         { type: Platform, },
         { type: DomController, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgZone, },
         { type: Content, decorators: [{ type: Optional },] },
     ]; };
@@ -43424,7 +43424,7 @@ var Item = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ItemReorder, decorators: [{ type: Optional },] },
     ]; };
     Item.propDecorators = {
@@ -43579,7 +43579,7 @@ var Checkbox = (function (_super) {
         { type: Form, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Checkbox.propDecorators = {
         'checked': [{ type: Input },],
@@ -43699,7 +43699,7 @@ var Chip = (function (_super) {
     Chip.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Chip;
 }(Ion));
@@ -44335,7 +44335,7 @@ var PickerCmp = (function () {
         { type: Config, },
         { type: GestureController, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     PickerCmp.propDecorators = {
         '_cols': [{ type: ViewChildren, args: [PickerColumnCmp,] },],
@@ -45616,7 +45616,7 @@ var DateTime = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: PickerController, decorators: [{ type: Optional },] },
     ]; };
@@ -45775,7 +45775,7 @@ var FabButton = (function (_super) {
     FabButton.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return FabButton;
 }(Ion));
@@ -45863,7 +45863,7 @@ var FabList = (function () {
     /** @nocollapse */
     FabList.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: Platform, },
     ]; };
@@ -47025,7 +47025,7 @@ var Img = (function () {
     /** @nocollapse */
     Img.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Platform, },
         { type: Content, decorators: [{ type: Optional },] },
         { type: DomController, },
@@ -48191,7 +48191,7 @@ var TextInput = (function (_super) {
         { type: Form, },
         { type: App, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Content, decorators: [{ type: Optional },] },
         { type: Item, decorators: [{ type: Optional },] },
         { type: NgControl, decorators: [{ type: Optional },] },
@@ -48435,7 +48435,7 @@ var ItemDivider = (function (_super) {
     ItemDivider.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return ItemDivider;
 }(Ion));
@@ -48733,7 +48733,7 @@ var List = (function (_super) {
     List.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Platform, },
         { type: GestureController, },
         { type: DomController, },
@@ -49135,7 +49135,7 @@ var ItemSliding = (function () {
     ItemSliding.ctorParameters = function () { return [
         { type: List, decorators: [{ type: Optional },] },
         { type: Platform, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: NgZone, },
     ]; };
@@ -49218,7 +49218,7 @@ var ListHeader = (function (_super) {
     /** @nocollapse */
     ListHeader.ctorParameters = function () { return [
         { type: Config, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: undefined, decorators: [{ type: Attribute, args: ['id',] },] },
     ]; };
@@ -49310,7 +49310,7 @@ var LoadingCmp = (function () {
         { type: ElementRef, },
         { type: GestureController, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     LoadingCmp.propDecorators = {
         'keyUp': [{ type: HostListener, args: ['body:keyup', ['$event'],] },],
@@ -50120,7 +50120,7 @@ var SplitPane = (function (_super) {
         { type: Platform, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     SplitPane.propDecorators = {
         '_setchildren': [{ type: ContentChildren, args: [RootNode, { descendants: false },] },],
@@ -50291,7 +50291,7 @@ var Nav = (function (_super) {
         { type: Platform, },
         { type: ElementRef, },
         { type: NgZone, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ComponentFactoryResolver, },
         { type: GestureController, },
         { type: TransitionController, },
@@ -50930,7 +50930,7 @@ var Menu = (function () {
         { type: ElementRef, },
         { type: Config, },
         { type: Platform, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Keyboard, },
         { type: GestureController, },
         { type: DomController, },
@@ -51176,7 +51176,7 @@ var Navbar = (function (_super) {
         { type: NavController, decorators: [{ type: Optional },] },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Navbar.propDecorators = {
         'hideBackButton': [{ type: Input },],
@@ -51766,7 +51766,7 @@ var ModalCmp = (function () {
     /** @nocollapse */
     ModalCmp.ctorParameters = function () { return [
         { type: ComponentFactoryResolver, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: NavParams, },
         { type: ViewController, },
@@ -52396,7 +52396,7 @@ var Note = (function (_super) {
     Note.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Note;
 }(Ion));
@@ -52573,7 +52573,7 @@ var PopoverCmp = (function () {
     PopoverCmp.ctorParameters = function () { return [
         { type: ComponentFactoryResolver, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: NavParams, },
         { type: ViewController, },
@@ -53284,7 +53284,7 @@ var RadioGroup = (function () {
     ];
     /** @nocollapse */
     RadioGroup.ctorParameters = function () { return [
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: ChangeDetectorRef, },
     ]; };
@@ -53498,7 +53498,7 @@ var RadioButton = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: RadioGroup, decorators: [{ type: Optional },] },
     ]; };
@@ -54025,7 +54025,7 @@ var Range = (function (_super) {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: DomController, },
         { type: ChangeDetectorRef, },
     ]; };
@@ -55103,7 +55103,7 @@ var Searchbar = (function (_super) {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgControl, decorators: [{ type: Optional },] },
     ]; };
     Searchbar.propDecorators = {
@@ -55339,7 +55339,7 @@ var Segment = (function (_super) {
     Segment.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgControl, decorators: [{ type: Optional },] },
     ]; };
     Segment.propDecorators = {
@@ -55840,7 +55840,7 @@ var Select = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: DeepLinker, },
     ]; };
@@ -60196,7 +60196,7 @@ var Slides = (function (_super) {
         { type: NgZone, },
         { type: ViewController, decorators: [{ type: Optional },] },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Slides.propDecorators = {
         'autoplay': [{ type: Input },],
@@ -60270,7 +60270,7 @@ var Slide = (function () {
     /** @nocollapse */
     Slide.ctorParameters = function () { return [
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Slides, },
     ]; };
     return Slide;
@@ -60486,7 +60486,7 @@ var Spinner = (function (_super) {
     Spinner.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Spinner.propDecorators = {
         'name': [{ type: Input },],
@@ -61215,7 +61215,7 @@ var Tabs = (function (_super) {
         { type: Config, },
         { type: ElementRef, },
         { type: Platform, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: DeepLinker, },
         { type: Keyboard, },
     ]; };
@@ -61587,7 +61587,7 @@ var Tab = (function (_super) {
         { type: Platform, },
         { type: ElementRef, },
         { type: NgZone, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ComponentFactoryResolver, },
         { type: ChangeDetectorRef, },
         { type: GestureController, },
@@ -61677,7 +61677,7 @@ var TabButton = (function (_super) {
     TabButton.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     TabButton.propDecorators = {
         'tab': [{ type: Input },],
@@ -61767,7 +61767,7 @@ var ToastCmp = (function () {
         { type: Config, },
         { type: ElementRef, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return ToastCmp;
 }());
@@ -62419,7 +62419,7 @@ var Toggle = (function (_super) {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Haptic, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: GestureController, },
@@ -62478,7 +62478,7 @@ var Footer = (function (_super) {
     Footer.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ViewController, decorators: [{ type: Optional },] },
     ]; };
     return Footer;
@@ -62533,7 +62533,7 @@ var Header = (function (_super) {
     Header.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ViewController, decorators: [{ type: Optional },] },
     ]; };
     return Header;
@@ -62665,7 +62665,7 @@ var Toolbar = (function (_super) {
     Toolbar.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Toolbar;
 }(ToolbarBase));
@@ -62710,7 +62710,7 @@ var ToolbarItem = (function (_super) {
     ToolbarItem.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Toolbar, decorators: [{ type: Optional },] },
         { type: Navbar, decorators: [{ type: Optional }, { type: Inject, args: [forwardRef(function () { return Navbar; }),] },] },
     ]; };
@@ -62793,7 +62793,7 @@ var ToolbarTitle = (function (_super) {
     ToolbarTitle.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Toolbar, decorators: [{ type: Optional },] },
         { type: Navbar, decorators: [{ type: Optional }, { type: Inject, args: [forwardRef(function () { return Navbar; }),] },] },
     ]; };
@@ -62886,7 +62886,7 @@ var Typography = (function (_super) {
     Typography.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Typography;
 }(Ion));
@@ -64173,7 +64173,7 @@ var VirtualScroll = (function () {
     VirtualScroll.ctorParameters = function () { return [
         { type: IterableDiffers, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgZone, },
         { type: ChangeDetectorRef, },
         { type: Content, },
@@ -67819,7 +67819,7 @@ var ClickBlock = (function () {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return ClickBlock;
 }());

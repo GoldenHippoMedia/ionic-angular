@@ -26,7 +26,7 @@ export declare class AlertCmp {
     mode: string;
     keyboardResizes: boolean;
     gestureBlocker: BlockerDelegate;
-    constructor(_viewCtrl: ViewController, _elementRef: ElementRef, config: Config, gestureCtrl: GestureController, params: NavParams, _renderer: Renderer, _plt: Platform);
+    constructor(_viewCtrl: ViewController, _elementRef: ElementRef, config: Config, gestureCtrl: GestureController, params: NavParams, _renderer: Renderer2, _plt: Platform);
     ionViewDidLoad(): void;
     ionViewWillEnter(): void;
     ionViewDidLeave(): void;

@@ -297,7 +297,7 @@ var ItemReorder = (function () {
         { type: Platform, },
         { type: DomController, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgZone, },
         { type: Content, decorators: [{ type: Optional },] },
     ]; };

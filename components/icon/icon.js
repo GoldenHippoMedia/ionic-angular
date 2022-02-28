@@ -190,7 +190,7 @@ var Icon = (function (_super) {
     Icon.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Icon.propDecorators = {
         'name': [{ type: Input },],

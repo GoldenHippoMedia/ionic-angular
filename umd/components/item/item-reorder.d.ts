@@ -152,7 +152,7 @@ export declare class ItemReorder implements ItemReorderGestureDelegate {
      * @input {string} Which side of the view the ion-reorder should be placed. Default `"end"`.
      */
     side: 'start' | 'end';
-    constructor(_plt: Platform, _dom: DomController, elementRef: ElementRef, _rendered: Renderer, _zone: NgZone, _content: Content);
+    constructor(_plt: Platform, _dom: DomController, elementRef: ElementRef, _rendered: Renderer2, _zone: NgZone, _content: Content);
     /**
      * @hidden
      */

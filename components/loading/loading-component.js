@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { BLOCK_ALL, GestureController } from '../../gestures/gesture-controller';
 import { isDefined, isUndefined } from '../../util/util';
@@ -90,7 +90,7 @@ var LoadingCmp = (function () {
         { type: ElementRef, },
         { type: GestureController, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     LoadingCmp.propDecorators = {
         'keyUp': [{ type: HostListener, args: ['body:keyup', ['$event'],] },],

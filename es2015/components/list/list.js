@@ -101,7 +101,7 @@ List.decorators = [
 List.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Platform, },
     { type: GestureController, },
     { type: DomController, },

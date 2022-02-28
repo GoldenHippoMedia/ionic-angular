@@ -706,7 +706,7 @@ var VirtualScroll = (function () {
     VirtualScroll.ctorParameters = function () { return [
         { type: IterableDiffers, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: NgZone, },
         { type: ChangeDetectorRef, },
         { type: Content, },

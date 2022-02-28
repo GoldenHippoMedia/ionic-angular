@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { ContentChildren, Directive, ElementRef, Inject, Optional, Renderer, forwardRef } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, Inject, Optional, Renderer2, forwardRef } from '@angular/core';
 import { Button } from '../button/button';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
@@ -44,7 +44,7 @@ var ToolbarItem = (function (_super) {
     ToolbarItem.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Toolbar, decorators: [{ type: Optional },] },
         { type: Navbar, decorators: [{ type: Optional }, { type: Inject, args: [forwardRef(function () { return Navbar; }),] },] },
     ]; };

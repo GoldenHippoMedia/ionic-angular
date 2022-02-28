@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, ElementRef, Input, Optional, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, Input, Optional, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { clamp, isTrueProperty } from '../../util/util';
 import { Config } from '../../config/config';
@@ -474,7 +474,7 @@ Range.ctorParameters = () => [
     { type: Config, },
     { type: Platform, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: DomController, },
     { type: ChangeDetectorRef, },
 ];

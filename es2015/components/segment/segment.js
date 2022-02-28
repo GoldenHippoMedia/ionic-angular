@@ -103,7 +103,7 @@ Segment.decorators = [
 Segment.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: NgControl, decorators: [{ type: Optional },] },
 ];
 Segment.propDecorators = {

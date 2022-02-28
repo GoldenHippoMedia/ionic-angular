@@ -1,4 +1,4 @@
-import { AfterViewInit, ElementRef, EventEmitter, Renderer, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, ElementRef, EventEmitter, Renderer2, ViewContainerRef } from '@angular/core';
 import { Subject } from 'rxjs';
 import 'rxjs/operators';
 import { App } from '../app/app';
@@ -209,7 +209,7 @@ export declare class Tabs extends Ion implements AfterViewInit, RootNode, ITabs,
      * @hidden
      */
     parent: NavControllerBase;
-    constructor(parent: NavController, viewCtrl: ViewController, _app: App, config: Config, elementRef: ElementRef, _plt: Platform, renderer: Renderer, _linker: DeepLinker, keyboard?: Keyboard);
+    constructor(parent: NavController, viewCtrl: ViewController, _app: App, config: Config, elementRef: ElementRef, _plt: Platform, renderer: Renderer2, _linker: DeepLinker, keyboard?: Keyboard);
     /**
      * @internal
      */

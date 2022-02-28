@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, Directive, ElementRef, ErrorHandler, Inject, Input, NgZone, Optional, Renderer, ViewContainerRef, forwardRef } from '@angular/core';
+import { ComponentFactoryResolver, Directive, ElementRef, ErrorHandler, Inject, Input, NgZone, Optional, Renderer2, ViewContainerRef, forwardRef } from '@angular/core';
 import { App } from './app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';
@@ -55,7 +55,7 @@ OverlayPortal.ctorParameters = () => [
     { type: Platform, },
     { type: ElementRef, },
     { type: NgZone, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ComponentFactoryResolver, },
     { type: GestureController, },
     { type: TransitionController, },

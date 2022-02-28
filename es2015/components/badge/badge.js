@@ -22,6 +22,6 @@ Badge.decorators = [
 Badge.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=badge.js.map

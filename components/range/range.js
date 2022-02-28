@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { ChangeDetectorRef, Component, ElementRef, Input, Optional, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, Input, Optional, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { clamp, isTrueProperty } from '../../util/util';
 import { Config } from '../../config/config';
@@ -522,7 +522,7 @@ var Range = (function (_super) {
         { type: Config, },
         { type: Platform, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: DomController, },
         { type: ChangeDetectorRef, },
     ]; };

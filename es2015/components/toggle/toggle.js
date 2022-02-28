@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Input, NgZone, Optional, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, NgZone, Optional, Renderer2, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Config } from '../../config/config';
 import { DomController } from '../../platform/dom-controller';
@@ -196,7 +196,7 @@ Toggle.ctorParameters = () => [
     { type: Config, },
     { type: Platform, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Haptic, },
     { type: Item, decorators: [{ type: Optional },] },
     { type: GestureController, },

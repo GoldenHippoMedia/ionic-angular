@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, ElementRef, Renderer, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, ElementRef, Renderer2, ViewContainerRef } from '@angular/core';
 import { Config } from '../../config/config';
 import { NavParams } from '../../navigation/nav-params';
 import { ViewController } from '../../navigation/view-controller';
@@ -24,7 +24,7 @@ export declare class PopoverCmp {
     _enabled: boolean;
     _gestureBlocker: BlockerDelegate;
     id: number;
-    constructor(_cfr: ComponentFactoryResolver, _elementRef: ElementRef, _renderer: Renderer, _config: Config, _navParams: NavParams, _viewCtrl: ViewController, gestureCtrl: GestureController, moduleLoader: ModuleLoader);
+    constructor(_cfr: ComponentFactoryResolver, _elementRef: ElementRef, _renderer: Renderer2, _config: Config, _navParams: NavParams, _viewCtrl: ViewController, gestureCtrl: GestureController, moduleLoader: ModuleLoader);
     ionViewPreLoad(): void;
     _load(component: any): void;
     _viewWillEnter(): void;

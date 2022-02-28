@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, Input, Output, Renderer, ViewChild, ViewEncapsulation, forwardRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild, ViewEncapsulation, forwardRef } from '@angular/core';
 import { App } from '../app/app';
 import { Backdrop } from '../backdrop/backdrop';
 import { Config } from '../../config/config';
@@ -635,7 +635,7 @@ var Menu = (function () {
         { type: ElementRef, },
         { type: Config, },
         { type: Platform, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Keyboard, },
         { type: GestureController, },
         { type: DomController, },

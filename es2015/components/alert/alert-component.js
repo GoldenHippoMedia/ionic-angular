@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { NON_TEXT_INPUT_REGEX } from '../../util/dom';
 import { BLOCK_ALL, GestureController } from '../../gestures/gesture-controller';
@@ -276,7 +276,7 @@ AlertCmp.ctorParameters = () => [
     { type: Config, },
     { type: GestureController, },
     { type: NavParams, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Platform, },
 ];
 AlertCmp.propDecorators = {

@@ -64,7 +64,7 @@ export declare class Segment extends BaseInput<string> implements AfterContentIn
      * @hidden
      */
     _buttons: QueryList<SegmentButton>;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, ngControl: NgControl);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, ngControl: NgControl);
     /**
      * @hidden
      */

@@ -1,4 +1,4 @@
-import { Component, ComponentFactoryResolver, ElementRef, HostListener, Renderer, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ElementRef, HostListener, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import { Config } from '../../config/config';
 import { KEY_ESCAPE } from '../../platform/key';
 import { NavParams } from '../../navigation/nav-params';
@@ -90,7 +90,7 @@ var PopoverCmp = (function () {
     PopoverCmp.ctorParameters = function () { return [
         { type: ComponentFactoryResolver, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Config, },
         { type: NavParams, },
         { type: ViewController, },

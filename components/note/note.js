@@ -49,7 +49,7 @@ var Note = (function (_super) {
     Note.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Note;
 }(Ion));

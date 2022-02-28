@@ -21,6 +21,6 @@ ItemDivider.decorators = [
 ItemDivider.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=item-divider.js.map

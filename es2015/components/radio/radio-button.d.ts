@@ -73,7 +73,7 @@ export declare class RadioButton extends Ion implements IonicTapInput, OnDestroy
      * @output {any} Emitted when the radio button is selected.
      */
     ionSelect: EventEmitter<any>;
-    constructor(_form: Form, config: Config, elementRef: ElementRef, renderer: Renderer, _item: Item, _group: RadioGroup);
+    constructor(_form: Form, config: Config, elementRef: ElementRef, renderer: Renderer2, _item: Item, _group: RadioGroup);
     /**
      * @input {any} The value of the radio button. Defaults to the generated id.
      */

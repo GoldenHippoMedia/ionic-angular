@@ -152,7 +152,7 @@ export declare class TextInput extends BaseInput<string> implements IonicFormInp
      * @hidden
      */
     focus: EventEmitter<UIEvent>;
-    constructor(config: Config, _plt: Platform, _form: Form, _app: App, elementRef: ElementRef, renderer: Renderer, _content: Content, _item: Item, ngControl: NgControl, _dom: DomController);
+    constructor(config: Config, _plt: Platform, _form: Form, _app: App, elementRef: ElementRef, renderer: Renderer2, _content: Content, _item: Item, ngControl: NgControl, _dom: DomController);
     ngAfterContentInit(): void;
     /**
      * @hidden

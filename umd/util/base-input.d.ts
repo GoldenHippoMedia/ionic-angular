@@ -51,7 +51,7 @@ export declare class BaseInput<T> extends Ion implements CommonInput<T> {
      * @input {boolean} If true, the user cannot interact with this element.
      */
     disabled: boolean;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, name: string, _defaultValue: T, _form: Form, _item: Item, _ngControl: NgControl);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, name: string, _defaultValue: T, _form: Form, _item: Item, _ngControl: NgControl);
     value: T;
     setValue(val: any): void;
     /**

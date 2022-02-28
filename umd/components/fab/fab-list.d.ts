@@ -33,7 +33,7 @@ export declare class FabList {
     _visible: boolean;
     _fabs: FabButton[];
     _mode: string;
-    constructor(_elementRef: ElementRef, _renderer: Renderer, config: Config, _plt: Platform);
+    constructor(_elementRef: ElementRef, _renderer: Renderer2, config: Config, _plt: Platform);
     _setbuttons: QueryList<FabButton>;
     /**
      * @hidden

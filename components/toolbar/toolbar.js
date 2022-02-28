@@ -127,7 +127,7 @@ var Toolbar = (function (_super) {
     Toolbar.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return Toolbar;
 }(ToolbarBase));

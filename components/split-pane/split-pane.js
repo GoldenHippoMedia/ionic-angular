@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { ContentChildren, Directive, ElementRef, EventEmitter, Input, NgZone, Output, Renderer, forwardRef } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, EventEmitter, Input, NgZone, Output, Renderer2, forwardRef } from '@angular/core';
 import { Ion } from '../ion';
 import { isTrueProperty } from '../../util/util';
 import { Config } from '../../config/config';
@@ -353,7 +353,7 @@ var SplitPane = (function (_super) {
         { type: Platform, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     SplitPane.propDecorators = {
         '_setchildren': [{ type: ContentChildren, args: [RootNode, { descendants: false },] },],

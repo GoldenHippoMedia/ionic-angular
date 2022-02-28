@@ -148,7 +148,7 @@ export declare class Range extends BaseInput<any> implements AfterContentInit, C
      * will return `null`.
      */
     readonly ratioUpper: number;
-    constructor(form: Form, _haptic: Haptic, item: Item, config: Config, _plt: Platform, elementRef: ElementRef, renderer: Renderer, _dom: DomController, _cd: ChangeDetectorRef);
+    constructor(form: Form, _haptic: Haptic, item: Item, config: Config, _plt: Platform, elementRef: ElementRef, renderer: Renderer2, _dom: DomController, _cd: ChangeDetectorRef);
     /**
      * @hidden
      */

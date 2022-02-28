@@ -28,7 +28,7 @@ var CardHeader = (function (_super) {
     CardHeader.ctorParameters = function () { return [
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return CardHeader;
 }(Ion));

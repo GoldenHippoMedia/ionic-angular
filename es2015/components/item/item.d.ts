@@ -283,7 +283,7 @@ export declare class Item extends Ion {
      * @hidden
      */
     labelId: string;
-    constructor(form: Form, config: Config, elementRef: ElementRef, renderer: Renderer, reorder: ItemReorder);
+    constructor(form: Form, config: Config, elementRef: ElementRef, renderer: Renderer2, reorder: ItemReorder);
     /**
      * @hidden
      */

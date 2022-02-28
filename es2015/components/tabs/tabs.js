@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer, ViewChild, ViewContainerRef, ViewEncapsulation, forwardRef } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer2, ViewChild, ViewContainerRef, ViewEncapsulation, forwardRef } from '@angular/core';
 import { Subject } from 'rxjs';
 import 'rxjs/operators';
 import { App } from '../app/app';
@@ -576,7 +576,7 @@ Tabs.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
     { type: Platform, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: DeepLinker, },
     { type: Keyboard, },
 ];

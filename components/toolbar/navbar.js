@@ -141,7 +141,7 @@ var Navbar = (function (_super) {
         { type: NavController, decorators: [{ type: Optional },] },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Navbar.propDecorators = {
         'hideBackButton': [{ type: Input },],

@@ -56,6 +56,6 @@ Typography.decorators = [
 Typography.ctorParameters = () => [
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 //# sourceMappingURL=typography.js.map

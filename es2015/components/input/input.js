@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Subject } from 'rxjs';
 import 'rxjs/operators';
@@ -552,7 +552,7 @@ TextInput.ctorParameters = () => [
     { type: Form, },
     { type: App, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Content, decorators: [{ type: Optional },] },
     { type: Item, decorators: [{ type: Optional },] },
     { type: NgControl, decorators: [{ type: Optional },] },

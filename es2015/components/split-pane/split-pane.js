@@ -1,4 +1,4 @@
-import { ContentChildren, Directive, ElementRef, EventEmitter, Input, NgZone, Output, Renderer, forwardRef } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, EventEmitter, Input, NgZone, Output, Renderer2, forwardRef } from '@angular/core';
 import { Ion } from '../ion';
 import { isTrueProperty } from '../../util/util';
 import { Config } from '../../config/config';
@@ -323,7 +323,7 @@ SplitPane.ctorParameters = () => [
     { type: Platform, },
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 SplitPane.propDecorators = {
     '_setchildren': [{ type: ContentChildren, args: [RootNode, { descendants: false },] },],

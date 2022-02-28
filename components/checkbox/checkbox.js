@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, ElementRef, HostListener, Input, Optional, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, Optional, Renderer2, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Config } from '../../config/config';
 import { isTrueProperty } from '../../util/util';
@@ -148,7 +148,7 @@ var Checkbox = (function (_super) {
         { type: Form, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     Checkbox.propDecorators = {
         'checked': [{ type: Input },],

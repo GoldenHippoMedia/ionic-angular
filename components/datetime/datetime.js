@@ -16,7 +16,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, Optional, Output, Renderer2, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Config } from '../../config/config';
 import { PickerController } from '../picker/picker-controller';
@@ -691,7 +691,7 @@ var DateTime = (function (_super) {
         { type: Form, },
         { type: Config, },
         { type: ElementRef, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: Item, decorators: [{ type: Optional },] },
         { type: PickerController, decorators: [{ type: Optional },] },
     ]; };

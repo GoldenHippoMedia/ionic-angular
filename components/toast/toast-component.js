@@ -82,7 +82,7 @@ var ToastCmp = (function () {
         { type: Config, },
         { type: ElementRef, },
         { type: NavParams, },
-        { type: Renderer, },
+        { type: Renderer2, },
     ]; };
     return ToastCmp;
 }());

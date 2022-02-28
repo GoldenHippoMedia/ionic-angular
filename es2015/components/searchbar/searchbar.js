@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Config } from '../../config/config';
 import { BaseInput } from '../../util/base-input';
@@ -320,7 +320,7 @@ Searchbar.ctorParameters = () => [
     { type: Config, },
     { type: Platform, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: NgControl, decorators: [{ type: Optional },] },
 ];
 Searchbar.propDecorators = {

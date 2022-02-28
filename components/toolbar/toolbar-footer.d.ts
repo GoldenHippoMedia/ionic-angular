@@ -23,5 +23,5 @@ import { ViewController } from '../../navigation/view-controller';
  *
  */
 export declare class Footer extends Ion implements IFooter {
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer, viewCtrl: ViewController);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2, viewCtrl: ViewController);
 }

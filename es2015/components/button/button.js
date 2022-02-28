@@ -1,4 +1,4 @@
-import { Attribute, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer, ViewEncapsulation } from '@angular/core';
+import { Attribute, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 import { isTrueProperty } from '../../util/util';
@@ -305,7 +305,7 @@ Button.ctorParameters = () => [
     { type: undefined, decorators: [{ type: Attribute, args: ['ion-button',] },] },
     { type: Config, },
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ];
 Button.propDecorators = {
     'large': [{ type: Input },],

@@ -83,7 +83,7 @@ export declare class Searchbar extends BaseInput<string> {
      * @output {event} Emitted when the clear input button is clicked.
      */
     ionClear: EventEmitter<UIEvent>;
-    constructor(config: Config, _plt: Platform, elementRef: ElementRef, renderer: Renderer, ngControl: NgControl);
+    constructor(config: Config, _plt: Platform, elementRef: ElementRef, renderer: Renderer2, ngControl: NgControl);
     _searchbarInput: ElementRef;
     _searchbarIcon: ElementRef;
     _cancelButton: ElementRef;

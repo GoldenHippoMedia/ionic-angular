@@ -40,7 +40,7 @@ var ListHeader = (function (_super) {
     /** @nocollapse */
     ListHeader.ctorParameters = function () { return [
         { type: Config, },
-        { type: Renderer, },
+        { type: Renderer2, },
         { type: ElementRef, },
         { type: undefined, decorators: [{ type: Attribute, args: ['id',] },] },
     ]; };

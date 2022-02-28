@@ -8,7 +8,7 @@ import { ModuleLoader } from '../../util/module-loader';
  */
 export declare class ModalCmp {
     _cfr: ComponentFactoryResolver;
-    _renderer: Renderer;
+    _renderer: Renderer2;
     _elementRef: ElementRef;
     _navParams: NavParams;
     _viewCtrl: ViewController;

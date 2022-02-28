@@ -10,7 +10,7 @@ import { ModuleLoader } from '../../util/module-loader';
 export declare class PopoverCmp {
     _cfr: ComponentFactoryResolver;
     _elementRef: ElementRef;
-    _renderer: Renderer;
+    _renderer: Renderer2;
     _config: Config;
     _navParams: NavParams;
     _viewCtrl: ViewController;

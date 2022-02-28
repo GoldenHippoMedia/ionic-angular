@@ -12,7 +12,7 @@ export declare class Ion {
     /** @hidden */
     _elementRef: ElementRef;
     /** @hidden */
-    _renderer: Renderer;
+    _renderer: Renderer2;
     /** @hidden */
     _color: string;
     /** @hidden */

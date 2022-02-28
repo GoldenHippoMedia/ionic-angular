@@ -104,7 +104,7 @@ export declare class MockRenderer {
     setElementClass(renderElement: MockElement, className: string, isAdd: boolean): void;
     setElementStyle(renderElement: MockElement, styleName: string, styleValue: string): void;
 }
-export declare function mockRenderer(): Renderer;
+export declare function mockRenderer(): Renderer2;
 export declare function mockLocation(): Location;
 export declare function mockView(component?: any, data?: any): ViewController;
 export declare function mockViews(nav: NavControllerBase, views: ViewController[]): void;

@@ -1,6 +1,6 @@
 import { AfterViewInit, ElementRef, EventEmitter, Renderer, ViewContainerRef } from '@angular/core';
 import { Subject } from 'rxjs';
-import 'rxjs/operators/takeUntil';
+import 'rxjs/operators';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';

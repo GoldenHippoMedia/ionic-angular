@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Optional, Output, Renderer, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Subject } from 'rxjs';
-import 'rxjs/operators/takeUntil';
+import 'rxjs/operators';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { Content } from '../content/content';

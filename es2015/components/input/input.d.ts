@@ -1,7 +1,7 @@
 import { ElementRef, EventEmitter, Renderer } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Subject } from 'rxjs';
-import 'rxjs/operators/takeUntil';
+import 'rxjs/operators';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { Content, ContentDimensions } from '../content/content';

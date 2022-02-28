@@ -14,15 +14,15 @@ var __extends = (this && this.__extends) || (function () {
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "@angular/core", "@angular/forms", "rxjs/Subject", "rxjs/add/operator/takeUntil", "../app/app", "../../config/config", "../content/content", "../../util/dom", "../../platform/dom-controller", "../../util/form", "../../util/base-input", "../../util/util", "../item/item", "../../platform/platform"], factory);
+        define(["require", "exports", "@angular/core", "@angular/forms", "rxjs", "rxjs/operators/takeUntil", "../app/app", "../../config/config", "../content/content", "../../util/dom", "../../platform/dom-controller", "../../util/form", "../../util/base-input", "../../util/util", "../item/item", "../../platform/platform"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var core_1 = require("@angular/core");
     var forms_1 = require("@angular/forms");
-    var Subject_1 = require("rxjs/Subject");
-    require("rxjs/add/operator/takeUntil");
+    var Subject_1 = require("rxjs");
+    require("rxjs/operators/takeUntil");
     var app_1 = require("../app/app");
     var config_1 = require("../../config/config");
     var content_1 = require("../content/content");

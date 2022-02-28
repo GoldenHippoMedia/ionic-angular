@@ -14,14 +14,14 @@ var __extends = (this && this.__extends) || (function () {
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "@angular/core", "rxjs/Subject", "rxjs/add/operator/takeUntil", "../app/app", "../../config/config", "../../navigation/deep-linker", "../ion", "../../util/util", "../../platform/keyboard", "../../navigation/nav-controller", "../../navigation/nav-util", "../../navigation/url-serializer", "../split-pane/split-pane", "../../platform/platform", "./tab-highlight", "../../navigation/view-controller"], factory);
+        define(["require", "exports", "@angular/core", "rxjs", "rxjs/operators/takeUntil", "../app/app", "../../config/config", "../../navigation/deep-linker", "../ion", "../../util/util", "../../platform/keyboard", "../../navigation/nav-controller", "../../navigation/nav-util", "../../navigation/url-serializer", "../split-pane/split-pane", "../../platform/platform", "./tab-highlight", "../../navigation/view-controller"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var core_1 = require("@angular/core");
-    var Subject_1 = require("rxjs/Subject");
-    require("rxjs/add/operator/takeUntil");
+    var Subject_1 = require("rxjs");
+    require("rxjs/operators/takeUntil");
     var app_1 = require("../app/app");
     var config_1 = require("../../config/config");
     var deep_linker_1 = require("../../navigation/deep-linker");

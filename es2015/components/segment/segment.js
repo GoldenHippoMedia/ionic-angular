@@ -1,4 +1,4 @@
-import { ContentChildren, Directive, ElementRef, Optional, Renderer } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, Optional, Renderer2 } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Config } from '../../config/config';
 import { BaseInput } from '../../util/base-input';

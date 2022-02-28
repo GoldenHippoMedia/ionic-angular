@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 /**
@@ -26,5 +26,5 @@ import { Ion } from '../ion';
  * {@link /docs/api/components/api/components/item/item ion-item}
   */
 export declare class Note extends Ion {
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2);
 }

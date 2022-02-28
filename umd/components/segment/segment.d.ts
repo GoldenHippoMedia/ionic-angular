@@ -1,4 +1,4 @@
-import { AfterContentInit, ElementRef, QueryList, Renderer } from '@angular/core';
+import { AfterContentInit, ElementRef, QueryList, Renderer2 } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Config } from '../../config/config';
 import { BaseInput } from '../../util/base-input';

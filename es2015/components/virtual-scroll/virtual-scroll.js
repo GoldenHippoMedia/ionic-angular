@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, ContentChild, Directive, ElementRef, Input, IterableDiffers, NgZone, Renderer } from '@angular/core';
+import { ChangeDetectorRef, ContentChild, Directive, ElementRef, Input, IterableDiffers, NgZone, Renderer2 } from '@angular/core';
 import { adjustRendered, calcDimensions, estimateHeight, initReadNodes, populateNodeData, processRecords, updateDimensions, updateNodeContext, writeToNodes } from './virtual-util';
 import { Config } from '../../config/config';
 import { Content } from '../content/content';

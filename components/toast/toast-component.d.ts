@@ -1,4 +1,4 @@
-import { AfterViewInit, ElementRef, Renderer } from '@angular/core';
+import { AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { NavParams } from '../../navigation/nav-params';
 import { ViewController } from '../../navigation/view-controller';
@@ -23,7 +23,7 @@ export declare class ToastCmp implements AfterViewInit {
     enabled: boolean;
     hdrId: string;
     id: number;
-    constructor(_viewCtrl: ViewController, _config: Config, _elementRef: ElementRef, params: NavParams, renderer: Renderer);
+    constructor(_viewCtrl: ViewController, _config: Config, _elementRef: ElementRef, params: NavParams, renderer: Renderer2);
     ngAfterViewInit(): void;
     ionViewDidEnter(): void;
     cbClick(): void;

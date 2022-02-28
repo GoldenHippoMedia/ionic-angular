@@ -1,4 +1,4 @@
-import { Attribute, Directive, ElementRef, Input, Renderer } from '@angular/core';
+import { Attribute, Directive, ElementRef, Input, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 /**

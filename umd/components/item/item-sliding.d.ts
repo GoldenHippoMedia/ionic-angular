@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, NgZone, QueryList, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, NgZone, QueryList, Renderer2 } from '@angular/core';
 import { Item } from './item';
 import { List } from '../list/list';
 import { Platform } from '../../platform/platform';

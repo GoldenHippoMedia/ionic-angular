@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { ToolbarBase } from './toolbar-base';
 /**
@@ -92,5 +92,5 @@ import { ToolbarBase } from './toolbar-base';
 export declare class Toolbar extends ToolbarBase {
     /** @hidden */
     _sbPadding: boolean;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2);
 }

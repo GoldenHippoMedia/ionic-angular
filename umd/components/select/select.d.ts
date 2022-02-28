@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, OnDestroy, QueryList, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, OnDestroy, QueryList, Renderer2 } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DeepLinker } from '../../navigation/deep-linker';

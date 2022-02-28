@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { ActionSheetButton, ActionSheetOptions } from './action-sheet-options';
 import { BlockerDelegate, GestureController } from '../../gestures/gesture-controller';
 import { Config } from '../../config/config';
@@ -18,7 +18,7 @@ export declare class ActionSheetCmp {
     id: number;
     mode: string;
     gestureBlocker: BlockerDelegate;
-    constructor(_viewCtrl: ViewController, config: Config, _elementRef: ElementRef, gestureCtrl: GestureController, params: NavParams, renderer: Renderer);
+    constructor(_viewCtrl: ViewController, config: Config, _elementRef: ElementRef, gestureCtrl: GestureController, params: NavParams, renderer: Renderer2);
     ionViewDidLoad(): void;
     ionViewWillEnter(): void;
     ionViewDidLeave(): void;

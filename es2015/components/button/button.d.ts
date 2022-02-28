@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 /**
@@ -186,7 +186,7 @@ export declare class Button extends Ion {
      * For more information, see [Theming your App](/docs/theming/theming-your-app).
      */
     color: string;
-    constructor(ionButton: string, config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(ionButton: string, config: Config, elementRef: ElementRef, renderer: Renderer2);
     /** @hidden */
     ngAfterContentInit(): void;
     /**

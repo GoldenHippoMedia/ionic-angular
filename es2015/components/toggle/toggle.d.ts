@@ -1,4 +1,4 @@
-import { AfterContentInit, ElementRef, NgZone, OnDestroy, Renderer } from '@angular/core';
+import { AfterContentInit, ElementRef, NgZone, OnDestroy, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { DomController } from '../../platform/dom-controller';
 import { Form, IonicTapInput } from '../../util/form';

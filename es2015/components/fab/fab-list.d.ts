@@ -1,4 +1,4 @@
-import { ElementRef, QueryList, Renderer } from '@angular/core';
+import { ElementRef, QueryList, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Platform } from '../../platform/platform';
 import { FabButton } from './fab';

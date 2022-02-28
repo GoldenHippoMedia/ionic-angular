@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 /**
@@ -113,7 +113,7 @@ export declare class Spinner extends Ion {
      * @input {boolean} If true, pause the animation.
      */
     paused: boolean;
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2);
     /**
      * @hidden
      */

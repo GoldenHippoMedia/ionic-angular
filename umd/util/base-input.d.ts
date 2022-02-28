@@ -1,4 +1,4 @@
-import { AfterContentInit, ElementRef, EventEmitter, Renderer } from '@angular/core';
+import { AfterContentInit, ElementRef, EventEmitter, Renderer2 } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NgControl } from '@angular/forms';
 import { IonicFormInput } from './form';

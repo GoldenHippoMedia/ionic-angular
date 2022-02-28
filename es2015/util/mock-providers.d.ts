@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, ComponentRef, ElementRef, NgZone, Renderer } from '@angular/core';
+import { ChangeDetectorRef, ComponentRef, ElementRef, NgZone, Renderer2 } from '@angular/core';
 import { Location } from '@angular/common';
 import { App } from '../components/app/app';
 import { Config } from '../config/config';

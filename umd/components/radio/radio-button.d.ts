@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, OnDestroy, OnInit, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Form, IonicTapInput } from '../../util/form';
 import { Ion } from '../ion';

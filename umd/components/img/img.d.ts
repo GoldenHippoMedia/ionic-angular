@@ -1,4 +1,4 @@
-import { ElementRef, OnDestroy, Renderer } from '@angular/core';
+import { ElementRef, OnDestroy, Renderer2 } from '@angular/core';
 import { Img as IImg } from './img-interface';
 import { Content } from '../content/content';
 import { DomController } from '../../platform/dom-controller';

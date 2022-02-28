@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, ElementRef, EventEmitter, Renderer } from '@angular/core';
+import { ChangeDetectorRef, ElementRef, EventEmitter, Renderer2 } from '@angular/core';
 import { RadioButton } from './radio-button';
 /**
  * @name RadioGroup

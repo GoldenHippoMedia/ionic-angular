@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { BlockerDelegate, GestureController } from '../../gestures/gesture-controller';
 import { LoadingOptions } from './loading-options';
@@ -15,7 +15,7 @@ export declare class LoadingCmp {
     showSpinner: boolean;
     durationTimeout: any;
     gestureBlocker: BlockerDelegate;
-    constructor(_viewCtrl: ViewController, _config: Config, _elementRef: ElementRef, gestureCtrl: GestureController, params: NavParams, renderer: Renderer);
+    constructor(_viewCtrl: ViewController, _config: Config, _elementRef: ElementRef, gestureCtrl: GestureController, params: NavParams, renderer: Renderer2);
     ngOnInit(): void;
     ionViewWillEnter(): void;
     ionViewDidLeave(): void;

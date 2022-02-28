@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Optional, Renderer } from '@angular/core';
+import { Directive, ElementRef, Optional, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 import { ViewController } from '../../navigation/view-controller';

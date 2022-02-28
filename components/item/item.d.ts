@@ -1,4 +1,4 @@
-import { ElementRef, QueryList, Renderer } from '@angular/core';
+import { ElementRef, QueryList, Renderer2 } from '@angular/core';
 import { Button } from '../button/button';
 import { Config } from '../../config/config';
 import { Form } from '../../util/form';

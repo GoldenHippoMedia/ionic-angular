@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, NgZone, QueryList, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, NgZone, QueryList, Renderer2 } from '@angular/core';
 import { Ion } from '../ion';
 import { Config } from '../../config/config';
 import { Platform } from '../../platform/platform';
@@ -160,7 +160,7 @@ export declare class SplitPane extends Ion implements RootNode {
      * @output {any} Expression to be called when the split-pane visibility has changed
      */
     ionChange: EventEmitter<SplitPane>;
-    constructor(_zone: NgZone, _plt: Platform, config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(_zone: NgZone, _plt: Platform, config: Config, elementRef: ElementRef, renderer: Renderer2);
     /**
      * @hidden
      */

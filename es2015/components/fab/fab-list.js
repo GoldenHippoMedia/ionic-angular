@@ -1,4 +1,4 @@
-import { ContentChildren, Directive, ElementRef, Renderer } from '@angular/core';
+import { ContentChildren, Directive, ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { isTrueProperty } from '../../util/util';
 import { Platform } from '../../platform/platform';

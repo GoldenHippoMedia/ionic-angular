@@ -7,7 +7,7 @@ import { Transition } from '../transitions/transition';
 export declare function getComponent(linker: DeepLinker, nameOrPageOrView: any, params?: any): Promise<ViewController>;
 export declare function convertToView(linker: DeepLinker, nameOrPageOrView: any, params: any): Promise<ViewController>;
 export declare function convertToViews(linker: DeepLinker, pages: any[]): Promise<ViewController[]>;
-export declare function setZIndex(nav: NavControllerBase, enteringView: ViewController, leavingView: ViewController, direction: string, renderer: Renderer): void;
+export declare function setZIndex(nav: NavControllerBase, enteringView: ViewController, leavingView: ViewController, direction: string, renderer: Renderer2): void;
 export declare function isTabs(nav: any): boolean;
 export declare function isTab(nav: any): boolean;
 export declare function isNav(nav: any): boolean;

@@ -1,4 +1,4 @@
-import { ElementRef, OnDestroy, Renderer } from '@angular/core';
+import { ElementRef, OnDestroy, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Form, IonicTapInput } from '../../util/form';
 import { BaseInput } from '../../util/base-input';
@@ -74,7 +74,7 @@ export declare class Checkbox extends BaseInput<boolean> implements IonicTapInpu
      * @input {boolean} If true, the element is selected.
      */
     checked: boolean;
-    constructor(config: Config, form: Form, item: Item, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, form: Form, item: Item, elementRef: ElementRef, renderer: Renderer2);
     /**
      * @hidden
      */

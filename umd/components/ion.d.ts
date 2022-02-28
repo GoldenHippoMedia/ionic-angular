@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../config/config';
 /**
  * Base class for all Ionic components. Exposes some common functionality

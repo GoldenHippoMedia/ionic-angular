@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { NavController } from '../../navigation/nav-controller';
@@ -67,7 +67,7 @@ export declare class Navbar extends ToolbarBase {
      * @input {boolean} If true, the back button will be hidden.
      */
     hideBackButton: boolean;
-    constructor(_app: App, viewCtrl: ViewController, navCtrl: NavController, config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(_app: App, viewCtrl: ViewController, navCtrl: NavController, config: Config, elementRef: ElementRef, renderer: Renderer2);
     backButtonClick(ev: UIEvent): void;
     /**
      * Set the text of the Back Button in the Nav Bar. Defaults to "Back".

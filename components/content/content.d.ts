@@ -1,4 +1,4 @@
-import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, Renderer } from '@angular/core';
+import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, Renderer2 } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { DomController } from '../../platform/dom-controller';

@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, NgZone, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, NgZone, Renderer2 } from '@angular/core';
 import { Content } from '../content/content';
 import { DomController } from '../../platform/dom-controller';
 import { ItemReorderGesture, ItemReorderGestureDelegate } from './item-reorder-gesture';

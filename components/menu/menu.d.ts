@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, OnDestroy, OnInit, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { App } from '../app/app';
 import { Backdrop } from '../backdrop/backdrop';
 import { Config } from '../../config/config';

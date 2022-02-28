@@ -1,4 +1,4 @@
-import { ElementRef, Renderer } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 /**
@@ -9,5 +9,5 @@ import { Ion } from '../ion';
   * @see {@link /docs/components/#badges Badges Component Docs}
  */
 export declare class Badge extends Ion {
-    constructor(config: Config, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, elementRef: ElementRef, renderer: Renderer2);
 }

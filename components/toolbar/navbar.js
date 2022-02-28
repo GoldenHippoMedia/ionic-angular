@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, ElementRef, Input, Optional, Renderer } from '@angular/core';
+import { Component, ElementRef, Input, Optional, Renderer2 } from '@angular/core';
 import { App } from '../app/app';
 import { Config } from '../../config/config';
 import { isTrueProperty } from '../../util/util';

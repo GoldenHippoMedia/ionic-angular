@@ -1,4 +1,4 @@
-import { ElementRef, QueryList, Renderer } from '@angular/core';
+import { ElementRef, QueryList, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { BlockerDelegate, GestureController } from '../../gestures/gesture-controller';
 import { NavParams } from '../../navigation/nav-params';
@@ -18,7 +18,7 @@ export declare class PickerCmp {
     id: number;
     mode: string;
     _gestureBlocker: BlockerDelegate;
-    constructor(_viewCtrl: ViewController, _elementRef: ElementRef, config: Config, gestureCtrl: GestureController, params: NavParams, renderer: Renderer);
+    constructor(_viewCtrl: ViewController, _elementRef: ElementRef, config: Config, gestureCtrl: GestureController, params: NavParams, renderer: Renderer2);
     ionViewWillLoad(): void;
     ionViewDidLoad(): void;
     ionViewWillEnter(): void;

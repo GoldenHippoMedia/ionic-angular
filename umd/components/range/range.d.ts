@@ -1,4 +1,4 @@
-import { AfterContentInit, ChangeDetectorRef, ElementRef, OnDestroy, Renderer } from '@angular/core';
+import { AfterContentInit, ChangeDetectorRef, ElementRef, OnDestroy, Renderer2 } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { Config } from '../../config/config';
 import { DomController } from '../../platform/dom-controller';

@@ -1,4 +1,4 @@
-import { ElementRef, EventEmitter, NgZone, Renderer } from '@angular/core';
+import { ElementRef, EventEmitter, NgZone, Renderer2 } from '@angular/core';
 import { Config } from '../../config/config';
 import { Ion } from '../ion';
 import { Platform } from '../../platform/platform';
@@ -690,7 +690,7 @@ export declare class Slides extends Ion {
     nextButton: HTMLElement;
     /** @hidden */
     prevButton: HTMLElement;
-    constructor(config: Config, _plt: Platform, zone: NgZone, viewCtrl: ViewController, elementRef: ElementRef, renderer: Renderer);
+    constructor(config: Config, _plt: Platform, zone: NgZone, viewCtrl: ViewController, elementRef: ElementRef, renderer: Renderer2);
     private _initSlides();
     /**
      * @hidden

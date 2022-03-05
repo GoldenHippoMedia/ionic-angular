@@ -4,17 +4,15 @@
 // Ionicons CSS for Ionic's <ion-icon> element
 // ionicons-icons.scss has the icons and their unicode characters
 
-$ionicons-font-path: $font-path !default;
-
 @import "ionicons-icons";
 @import "ionicons-variables";
 
 
 @font-face {
   font-family: "Ionicons";
-  src: url("#{$ionicons-font-path}/ionicons.woff2?v=#{$ionicons-version}") format("woff2"),
-    url("#{$ionicons-font-path}/ionicons.woff?v=#{$ionicons-version}") format("woff"),
-    url("#{$ionicons-font-path}/ionicons.ttf?v=#{$ionicons-version}") format("truetype");
+  src: url(./ionicons.woff2?v=#{$ionicons-version}) format("woff2"),
+    url(./ionicons.woff?v=#{$ionicons-version}) format("woff"),
+    url(./ionicons.ttf?v=#{$ionicons-version}) format("truetype");
   font-weight: normal;
   font-style: normal;
 }

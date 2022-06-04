@@ -19,6 +19,7 @@ var TapClick = (function () {
         this.gestureCtrl = gestureCtrl;
         this.disableClick = 0;
         this.events = new UIEventManager(plt);
+        this.dispatchClick = true;
         var activator = config.get('activator');
         if (activator === 'ripple') {
             this.activator = new RippleActivator(app, config, dom);

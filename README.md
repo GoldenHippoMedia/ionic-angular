@@ -1,3 +1,12 @@
+## GH ionic-angular 3.9.4 Fork
+
+Fork created by Morley.
+
+In use by ActivatedYou-v1.24-PCI at the time of writing.
+
+- DEV-3140: Fixes an issue preventing clicking on any non-ionic element before
+clicking on an ionic-angular first after page load
+
 ## Ionic Framework
 
 The official npm package for [Ionic](https://ionicframework.com/), complete with pre-built ES5 bundles, TypeScript definitions, Sass files, CommonJS ES5 files, and more.

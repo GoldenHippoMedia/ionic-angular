@@ -99,8 +99,8 @@ $radio-wp-item-end-margin-start:      0 !default;
 
   display: none;
 
-  width: $radio-wp-icon-width / 2;
-  height: $radio-wp-icon-height / 2;
+  width: $radio-wp-icon-width * 0.5;
+  height: $radio-wp-icon-height * 0.5;
 
   background-color: $radio-wp-color-off;
 }
